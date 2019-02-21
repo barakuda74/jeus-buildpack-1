@@ -136,15 +136,12 @@ open http://localhost:9744/webadmin/
 
 ```
  
-==================================================================================================
-
 
 # Refer to 
-http://engineering.pivotal.io/post/creating-a-custom-buildpack/
-https://docs.cloudfoundry.org/buildpacks/custom.html/
-https://github.com/cloudfoundry/buildpack-packager/
-Official buildpack documentation can be found at [ruby buildpack docs](http://docs.cloudfoundry.org/buildpacks/ruby/index.html).
-https://github.com/rstudio/shiny-examples
+- Official buildpack documentation can be found at [ruby buildpack docs](http://docs.cloudfoundry.org/buildpacks/ruby/index.html).
+- http://engineering.pivotal.io/post/creating-a-custom-buildpack/
+- https://docs.cloudfoundry.org/buildpacks/custom.html/
+- https://github.com/cloudfoundry/buildpack-packager/
 
 
 
