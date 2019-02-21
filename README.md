@@ -1,6 +1,8 @@
-## pre-requisites.
+# Buildpack for JEUS 6
 
-### parepare installed jdk7 && jeus6 archives. (on ubuntu VM)
+## Pre-requisites.
+
+ parepare installed jdk7 && jeus6 archives. (on ubuntu VM)
 - prepare on a fresh ubuntu xenial vm. 
 - create a user 'vcap' and switch to 'vcap' user
 - install jdk7 && jeus6 under /home/vcap/app/jdk7, /home/vcap/app/jeus6
@@ -10,7 +12,7 @@
 - delete jeus-buildpack/prebuilt-archives/home_vcap_app_image/home_vcap_app_image.tar.gz
 - git push
 
-## build jeus-buildpack (on linux machine)
+## Build jeus-buildpack (on linux machine)
 
 ```
 $ git clone https://github.com/myminseok/jeus-buildpack
@@ -51,7 +53,7 @@ jeus-buildpack           24         true      false    jeus_buildpack-cached-v0.
 ```
 
 
-## how to deploy ear
+## How to deploy ear
 
 1. prepare application (ear)
 
@@ -88,9 +90,9 @@ open http:/sample.apps.<pcf-domain>
 
 ```
 
-## how to access jeus webadmin UI
+## How to access jeus webadmin UI
 
-### get app container IP
+### Get app container IP
 ```
 $ cf ssh <app name> -i <container index>
 
@@ -105,7 +107,7 @@ vcap@112d5338-eaf5-45b8-4acf-4c33:~$ exit
 
 ```
 
-### make ssh tunnel to app container
+### Make ssh tunnel to app container
 ssh
 ```
 cf ssh -L <your local pc port>:<app container ip>:<app container port> <app name> -i <container index>
@@ -130,7 +132,7 @@ tcp        0      0 0.0.0.0:34325           0.0.0.0:*               LISTEN
 
 ```
 
-### access jeus web admnin
+### Access jeus web admnin
 ```
 open http://localhost:9744/webadmin/
 
