@@ -10,16 +10,14 @@ buildpacks/*
 log
 machete.log
 repos/*
-ruby_buildpack.zip
 tmp/
 temp/
 vendor/cache/*
 vendor/bundle/*
 vendor/bundler/*
-/ruby_buildpack-*.zip
 .bundle/
 *.so.*
 /.bin/
 *_buildpack-cached-*.zip
-**/**/home_vcap_app_fakechroot-merged.tar.gz
+**/**/home_vcap_app_image.tar.gz
 
