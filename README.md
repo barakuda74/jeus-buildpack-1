@@ -57,7 +57,7 @@ jeus-buildpack           24         true      false    jeus_buildpack-cached-v0.
 
 ```
 $ git clone https://github.com/myminseok/jeus-buildpack
-$ cd jeus-buildpack/sample-app-ear
+$ cd jeus-buildpack/test/sample-app-ear
 
 $ ls -al
 
