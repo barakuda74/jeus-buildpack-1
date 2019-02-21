@@ -1,0 +1,853 @@
+v1.6.47 Aug 07, 2017
+=====================
+
+* Add node 6.11.2, remove node 6.11.1
+  (https://www.pivotaltracker.com/story/show/149837609)
+
+v1.6.46 Jul 31, 2017
+=====================
+
+* Update openjdk 1.8.0_131 -> 1.8.0_141
+  (https://www.pivotaltracker.com/story/show/149546525)
+
+* Log a message if node is already supplied
+  (https://www.pivotaltracker.com/story/show/147464525)
+
+v1.6.45 Jul 24, 2017
+=====================
+
+* Add bundler 1.15.3, remove bundler 1.15.1
+  (https://www.pivotaltracker.com/story/show/149029147)
+  (https://www.pivotaltracker.com/story/show/149328823)
+
+* link to dep/*/bin/* using bash script instead of symlinks
+  (https://www.pivotaltracker.com/story/show/149299715)
+
+* Only emit warnings inline to avoid both duplication and confusion during diagnosis
+  (https://www.pivotaltracker.com/story/show/148696219)
+
+* Avoid warning developers about having vendor/bundle in their repository when they had not
+  (https://www.pivotaltracker.com/story/show/148696219)
+
+v1.6.44 Jul 13, 2017
+=====================
+
+* Add node 4.8.4, remove node 4.8.3
+  (https://www.pivotaltracker.com/story/show/148684925)
+
+* Add node 6.11.1, remove node 6.11.0
+  (https://www.pivotaltracker.com/story/show/148684925)
+
+v1.6.43 Jul 10, 2017
+=====================
+
+* Add yarn 0.27.5, remove yarn 0.24.6
+  (https://www.pivotaltracker.com/story/show/148175165)
+  (https://www.pivotaltracker.com/story/show/148169407)
+  (https://www.pivotaltracker.com/story/show/148107277)
+  (https://www.pivotaltracker.com/story/show/147751911)
+
+* Add jruby 9.1.12.0, remove 9.1.10.0
+  (https://www.pivotaltracker.com/story/show/147283461)
+
+v1.6.42 Jun 22, 2017
+=====================
+
+* Amend license, and fix readme links
+  (https://www.pivotaltracker.com/story/show/147439591)
+  (https://www.pivotaltracker.com/story/show/147615323)
+
+* Add node 6.11.0, remove node 6.10.3
+  (https://www.pivotaltracker.com/story/show/146731549)
+
+
+v1.6.41 Jun 06, 2017
+=====================
+
+* Convert to online-only distribution.
+  - See: http://cf-dev.70369.x6.nabble.com/cf-dev-Discontinuing-Distribution-of-the-Offline-Buildpacks-td6732.html
+  (https://www.pivotaltracker.com/story/show/146375487)
+
+* Add jruby 9.1.10.0, remove jruby 9.1.9.0
+  (https://www.pivotaltracker.com/story/show/146119231)
+
+* Add bundler 1.15.1, remove bundler 1.15.0
+  source url: https://rubygems.org/downloads/bundler-1.15.1.gem
+  source sha256: fa6ec48f94faffe4987f89b4b85409fd6a4ddce8d46f779acdc26d041eb200d7
+  (https://www.pivotaltracker.com/story/show/146502569)
+
+
+v1.6.40 May 26, 2017
+=====================
+
+* Add bundler 1.15.0, remove bundler 1.14.6
+  (https://www.pivotaltracker.com/story/show/145768065)
+
+* Add yarn 0.24.6, remove yarn 0.24.4
+  (https://www.pivotaltracker.com/story/show/145961345)
+
+* Add JRuby 9.1.9.0, Remove JRuby 9.1.8.0
+  (https://www.pivotaltracker.com/story/show/145548597)
+
+* Change default ruby version from 2.3.4 to 2.4.1
+  (https://www.pivotaltracker.com/story/show/143721855)
+
+v1.6.39 May 12, 2017
+=====================
+
+* Add yarn 0.24.4, remove yarn 0.23.4
+  (https://www.pivotaltracker.com/story/show/145364383)
+  (https://www.pivotaltracker.com/story/show/145350573)
+
+* Add EOL links to ruby buildpack
+  (https://www.pivotaltracker.com/story/show/144943203)
+
+* Reference new windows gemfile docs
+  (https://www.pivotaltracker.com/story/show/141699203)
+
+* Host openjdk in buildpacks bucket
+  (https://www.pivotaltracker.com/story/show/145198585)
+
+* Use '_' instead of '-' in .profile.d script names
+  (https://www.pivotaltracker.com/story/show/144964891)
+
+v1.6.38 May 03, 2017
+=====================
+
+* Add node 4.8.3 and 6.10.3, remove node 6.10.2 and 4.8.2
+  (https://www.pivotaltracker.com/story/show/144725819)
+  (https://www.pivotaltracker.com/story/show/144719795)
+
+* Add yarn 0.23.4, remove yarn 0.23.2
+  (https://www.pivotaltracker.com/story/show/144725823)
+  (https://www.pivotaltracker.com/story/show/144440647)
+
+* Add Add openjdk 1.8.0_131, remove openjdk 1.8.0_121
+  (https://www.pivotaltracker.com/story/show/144221517)
+
+* Spilt compile into supply and finalize
+  - allows buildpack to use dependencies supplied by previous buildpacks
+  - Move install directories for bundler, ruby, node, yarn, + jvm to
+  dep_dir
+  - clean up some unused code (e.g. only mattered for ancient versions of
+  ruby, only applied to heroku)
+  (https://www.pivotaltracker.com/story/show/142852033)
+
+v1.6.37 Apr 04, 2017
+=====================
+
+* Add node 4.8.2, remove node 4.8.1
+  (https://www.pivotaltracker.com/story/show/143029841)
+
+* Add node 6.10.2, remove node 6.10.1
+  (https://www.pivotaltracker.com/story/show/143029841)
+
+* Add deprecation dates for ruby 2.1.x
+  See: https://www.ruby-lang.org/en/news/2017/04/01/support-of-ruby-2-1-has-ended/
+
+* Add ruby 2.3.4, remove 2.3.2
+  (https://www.pivotaltracker.com/story/show/142590541)
+
+* Add ruby 2.2.7, remove 2.2.5
+  (https://www.pivotaltracker.com/story/show/142579565)
+
+* Add yarn 0.22.0, remove yarn 0.21.3
+
+v1.6.36 Mar 23, 2017
+=====================
+
+* Add ruby 2.4.1
+  (https://www.pivotaltracker.com/story/show/142155613)
+
+* Add node 4.8.1, remove node 4.8.0
+  (https://www.pivotaltracker.com/story/show/142185261)
+
+* Add jruby 9.1.8.0, remove jruby 9.1.7.0
+  (https://www.pivotaltracker.com/story/show/141046145)
+
+* Add bundler 1.14.6, remove bundler 1.14.5
+  (https://www.pivotaltracker.com/story/show/141055921)
+
+* Fail staging if unable to write .profile.d script
+  (https://www.pivotaltracker.com/story/show/141616657)
+
+* Buildpack can use dependencies provided by supply scripts
+  (https://www.pivotaltracker.com/story/show/141616657)
+
+* Use nodejs 6.x for rails 5.1 and above, continue using nodejs 4.x for other execjs apps
+  - Make When node is required install npm as well
+  - Add node 6.10.1
+  (https://www.pivotaltracker.com/story/show/141167599)
+  (https://www.pivotaltracker.com/story/show/141165751)
+  (https://www.pivotaltracker.com/story/show/142185261)
+
+* Use pessimistic locking on Ruby version in Gemfile
+  - Change ruby version warning to include pessimistic versioning suggestion
+  (https://www.pivotaltracker.com/story/show/140770891)
+  (https://www.pivotaltracker.com/story/show/141518629)
+
+* Changes behaviour of ruby version download by setting jruby patchlevel to be not significant
+  (https://www.pivotaltracker.com/story/show/140663631)
+
+v1.6.35 Feb 27, 2017
+=====================
+
+* Add "retry" flag to bundler
+  (https://www.pivotaltracker.com/story/show/140511461)
+
+* Add node 4.8.0, remove node 4.7.3
+  (https://www.pivotaltracker.com/story/show/140373175)
+
+* Add bundler 1.14.5, remove bundler 1.14.3
+  (https://www.pivotaltracker.com/story/show/140373173)
+
+v1.6.34 Feb 07, 2017
+=====================
+
+* Add EOL dates for jruby, openjdk and node
+  (https://www.pivotaltracker.com/story/show/137374307)
+
+* Add node 4.7.3, remove node 4.7.2
+  (https://www.pivotaltracker.com/story/show/138773607)
+
+* Remove unlicensed external dependencies: rails_log_stdout and rails3_serve_static_assets
+  (https://www.pivotaltracker.com/story/show/138644499)
+
+v1.6.33 Jan 23, 2017
+=====================
+
+* Add bundler 1.14.2, remove bundler 1.13.7
+  (https://www.pivotaltracker.com/story/show/138119911)
+
+* Add jruby 9.1.7.0, remove jruby 9.1.5.0
+  (https://www.pivotaltracker.com/story/show/137476393)
+
+* Add openjdk 1.8.0_121, remove openjdk 1.8.0_111
+  (https://www.pivotaltracker.com/story/show/137883043)
+
+v1.6.32 Jan 10, 2017
+=====================
+
+* Add warning if downloaded dependency is not the latest patch version for a
+given major and minor version
+  (https://www.pivotaltracker.com/story/show/134863437)
+
+* Add new version warning to Ruby buildpack
+  (https://www.pivotaltracker.com/story/show/135234395)
+
+* Add bundler 1.13.7, remove bundler 1.13.6
+  (https://www.pivotaltracker.com/story/show/136650377)
+
+* Add ruby 2.4.0
+  (https://www.pivotaltracker.com/story/show/136620759)
+
+* Add node 4.7.2, remove node 4.7.0
+  (https://www.pivotaltracker.com/story/show/137135283)
+  (https://www.pivotaltracker.com/story/show/136994135)
+
+v1.6.30 Dec 19, 2016
+=====================
+
+* Add jruby 9.1.5.0, remove jruby 9.1.2.0
+  (https://www.pivotaltracker.com/story/show/129904651)
+
+* Add node 4.7.0, remove node 4.6.2
+  (https://www.pivotaltracker.com/story/show/135648535)
+
+v1.6.29 Dec 06, 2016
+=====================
+
+* Add ruby 2.1.10, remove ruby 2.1.8
+
+* Add ruby 2.2.6, remove ruby 2.2.4
+  (https://www.pivotaltracker.com/story/show/134340425)
+
+* Add ruby 2.3.2 and 2.3.3, remove ruby 2.3.1
+  (https://www.pivotaltracker.com/story/show/134330017)
+  (https://www.pivotaltracker.com/story/show/134696699)
+
+* Rebuild and change path for ruby, jruby, bundler, node binaries and
+  rails patching code
+  - We identified a potential, but unlikely, attack vector in our continuous
+    integration system. Our own auditing strongly suggests that this attack
+    vector was not taken advantage of. However, out of an abundance of caution,
+    we are rebuilding all buildpack dependencies that we maintain.
+
+v1.6.28 Nov 09, 2016
+=====================
+
+* Add node 4.6.2, remove node 4.6.1
+  (https://www.pivotaltracker.com/story/show/133955125)
+
+* Add bundler 1.13.6, remove bundler 1.13.5
+  (https://www.pivotaltracker.com/story/show/132957609)
+
+* Add openjdk 1.8.0_111, remove openjdk 1.8.0_101
+  (https://www.pivotaltracker.com/story/show/132711731)
+
+* Ensure all downloaded binaries have checksums verified
+  (https://www.pivotaltracker.com/story/show/128099189)
+
+v1.6.27 Oct 18, 2016
+=====================
+
+* Add node 4.6.1, remove node 4.6.0
+  (https://www.pivotaltracker.com/story/show/132686391)
+
+* Add bundler 1.13.5, remove bundler 1.13.1
+  (https://www.pivotaltracker.com/story/show/132366579)
+
+v1.6.26 Sep 28, 2016
+=====================
+
+* Address USN-3087-1: OpenSSL vulnerabilities by updating node.
+  The new version of node included in this buildpack was built
+  against the patched version of OpenSSL
+  (https://www.pivotaltracker.com/story/show/130945067)
+
+* Add node 4.6.0, remove node 4.5.0
+  (https://www.pivotaltracker.com/story/show/131225127)
+
+v1.6.25 Sep 19, 2016
+=====================
+
+* Remove vendored libyaml
+  (https://www.pivotaltracker.com/story/show/130619237)
+
+* Add bundler 1.13.1, remove bundler 1.12.5
+  (https://www.pivotaltracker.com/story/show/130298183)
+
+v1.6.24 Sep 08, 2016
+=====================
+
+* Remove jruby-1.7.25, add jruby-1.7.26
+  (https://www.pivotaltracker.com/story/show/129371937)
+
+* Remove large variety of heroku references in staging output
+  (https://www.pivotaltracker.com/story/show/127931269)
+
+v1.6.23 Aug 31, 2016
+=====================
+
+* Fix crash in staging when Gemfile contains a gemspec with a relative path
+  (https://www.pivotaltracker.com/story/show/129458773)
+
+* Fix md5 checksum for OpenJDK 1.8 due to rebuild
+  (https://www.pivotaltracker.com/story/show/129462209)
+
+v1.6.22 Aug 25, 2016
+=====================
+
+* Add node 4.5.0, remove node 4.4.7
+  (https://www.pivotaltracker.com/story/show/128431641)
+
+* Ruby runtime selection respects `BUNDLE_GEMFILE` environment variable
+  (https://www.pivotaltracker.com/story/show/128974739)
+
+v1.6.21 Aug 11, 2016
+=====================
+
+* Redact credentials from URLs in a cached buildpack's output
+  (https://www.pivotaltracker.com/story/show/127357631)
+
+* Update buildpack-packager to 2.3.3
+  (https://www.pivotaltracker.com/story/show/127357631)
+
+* Redact credentials from URLs in an uncached buildpack's output
+  (https://www.pivotaltracker.com/story/show/126514693)
+
+* Add default_versions support to buildpack
+  (https://www.pivotaltracker.com/story/show/126394819)
+
+* Add node 4.4.7, remove node 4.4.4
+  (https://www.pivotaltracker.com/story/show/123264921)
+
+* Download openjdk from java-buildpack.cloudfoundry.org
+  (https://www.pivotaltracker.com/story/show/126972537)
+
+* Add openjdk 1.8.0_101, remove 1.8.0_91
+  (https://www.pivotaltracker.com/story/show/126661389)
+
+* The default domain for buildpack dependencies is now buildpacks.cloudfoundry.org
+  (https://www.pivotaltracker.com/story/show/121757949)
+
+v1.6.20 Jul 14, 2016
+=====================
+
+* Modify RubySemverVersion to use Bundler DSL to read file
+  (https://www.pivotaltracker.com/story/show/121730559)
+
+
+v1.6.19 Jun 08, 2016
+=====================
+
+* Add jruby 9.1.2.0, remove jruby 9.1.0.0
+  (https://www.pivotaltracker.com/story/show/120448043)
+
+* Correctly handle constants in Gemfile during ruby version check
+  (https://www.pivotaltracker.com/story/show/120409927)
+
+* Update bundler to 1.12.5
+  (https://www.pivotaltracker.com/story/show/120316237)
+
+v1.6.18 May 11, 2016
+=====================
+
+* Make Ruby 2.3.x the default version of Ruby
+  (https://www.pivotaltracker.com/story/show/119010685)
+
+* Update node to v4.4.4
+  (https://www.pivotaltracker.com/story/show/118779505)
+
+* Ruby buildpack supports version operators when specifying a `ruby` in the `Gemfile`
+  (https://www.pivotaltracker.com/story/show/106117082)
+
+* Update bundler 1.11.2 -> 1.12.3
+  (https://www.pivotaltracker.com/story/show/119185545)
+
+* Add ruby-2.2.3-jruby-9.1.0.0, remove ruby-2.2.3-jruby-9.0.5.0
+  (https://www.pivotaltracker.com/story/show/118847051)
+
+v1.6.17 Apr 28, 2016
+=====================
+
+* Make ruby 2.2.5 the default ruby version
+  (https://www.pivotaltracker.com/story/show/118363433)
+
+* Add ruby 2.3.1
+  (https://www.pivotaltracker.com/story/show/118323233)
+
+* Add ruby 2.2.5, remove ruby 2.2.3
+  (https://www.pivotaltracker.com/story/show/118363433)
+
+* Add openjdk 1.8.0_91, remove openjdk 1.8.0_77
+  (https://www.pivotaltracker.com/story/show/118006413)
+
+* Add openjdk 1.8.0_91, remove openjdk 1.8.0_77
+  (https://www.pivotaltracker.com/story/show/118006413)
+
+v1.6.16 Apr 15, 2016
+=====================
+
+* Add jruby from 1.7.25, remove jruby 1.7.24
+  (https://www.pivotaltracker.com/story/show/117647027)
+
+* Fix checksum for OpenJDK due to rebuild
+  (https://www.pivotaltracker.com/story/show/117700771)
+
+v1.6.15 Apr 06, 2016
+=====================
+
+* Remove non-CF specific Procfile and default web server warning
+  (https://www.pivotaltracker.com/story/show/113193737)
+
+* Add openjdk 1.8.0_77, remove openjdk 1.8.0_73
+  (https://www.pivotaltracker.com/story/show/116890851)
+
+* Add ruby 2.1.9, remove ruby 2.1.7
+  (https://www.pivotaltracker.com/story/show/116842687)
+
+v1.6.14 Mar 02, 2016
+=====================
+
+* Remove ruby 2.0.0
+  (https://www.pivotaltracker.com/story/show/114681287)
+
+* Upgrade bundler to 1.11.2
+  (https://www.pivotaltracker.com/story/show/113263389)
+
+v1.6.13 Feb 08, 2016
+=====================
+
+* Update jruby to 1.7.24 and 9.0.5.0, dropped 1.7.23 and 9.0.4.0
+  (https://www.pivotaltracker.com/story/show/112073931)
+  (https://www.pivotaltracker.com/story/show/112523589)
+
+* Update openjdk to 1.8.0_73, dropped 1.8.0_65
+  (https://www.pivotaltracker.com/story/show/113292605)
+
+* Change default ruby to 2.2.4
+
+* Instruct curl to follow redirects.
+
+v1.6.12 Dec 30, 2015
+=====================
+
+* add Ruby 2.3.0
+  (https://www.pivotaltracker.com/story/show/110759512)
+
+
+v1.6.11 Dec 17, 2015
+=====================
+
+* Added Ruby 2.2.4, 2.1.8, 2.0.0p648, Dropped 2.2.2, 2.1.6, 2.0.0p647
+  (https://www.pivotaltracker.com/story/show/110307648)
+
+* Removed manifest-including-unsupported
+  (https://www.pivotaltracker.com/story/show/109537822)
+
+v1.6.10 Dec 09, 2015
+=====================
+
+* Add support for JRuby 1.7.23 (Remove support for JRuby 1.7.22)
+  (https://www.pivotaltracker.com/story/show/109357572)
+
+
+v1.6.9 Nov 16, 2015
+====================
+
+* Add support for JRuby 9.0.4.0 (Remove support for JRuby 9.0.3.0)
+  (https://www.pivotaltracker.com/story/show/108125524)
+    
+* Developers should be given detailed, helpful instructions when they attempt
+  to stage an application whose dependency is not found in the manifest.
+  (https://www.pivotaltracker.com/story/show/107939104)
+    
+* Replace `JAVA_TOOL_OPTIONS` with `JAVA_MEM` to avoid JRuby overriding
+  (https://github.com/heroku/heroku-buildpack-ruby/commit/694c3039e710778d6286989ba6a006fd582b88c1)
+
+
+v1.6.8 Nov 03, 2015
+====================
+
+* Add support for JRuby 9.0.3.0 (Removes support for JRuby 9.0.1.0)
+  (https://www.pivotaltracker.com/story/show/106242058)
+  (https://www.pivotaltracker.com/story/show/106234536)
+
+* Update OpenJDK to 1.8.0_65.
+  (https://www.pivotaltracker.com/story/show/106836266)
+
+
+v1.6.7 Sep 04, 2015
+====================
+
+
+* Add support for jruby 9.0.1.0 (Removes support for jruby 9.0.0.0)
+* Removing support for jruby 1.7.21
+  (https://www.pivotaltracker.com/story/show/102606534)
+
+v1.6.6 Aug 28, 2015
+====================
+
+* Add support for jruby 1.7.22
+  (https://www.pivotaltracker.com/story/show/102073316)
+
+v1.6.5 Aug 21, 2015
+====================
+
+* Change default Ruby version to '2.2.3'
+  (https://www.pivotaltracker.com/story/show/101779882)
+
+v1.6.4 Aug 19, 2015
+===================
+
+* Add support for Ruby 2.1.7 and 2.0.0-p647, which addresses CVE-2015-3900.
+  Remove support for Ruby 2.1.5 and 2.0.0-p645.
+  (https://www.pivotaltracker.com/story/show/101589968)
+
+
+v1.6.3 Aug 19, 2015
+===================
+
+* Add support for Ruby 2.2.3, which addresses CVE-2015-3900
+  Remove support for Ruby 2.2.1.
+  (https://www.pivotaltracker.com/story/show/101589968)
+
+* `bin/detect` emits the buildpack version
+  (https://www.pivotaltracker.com/story/show/100757820)
+
+
+v1.6.2 Jul 30, 2015
+===================
+
+* Update to JRuby 9.0.0.0 (final)
+  - Add 9.0.0.0
+  - Remove 9.0.0.0.rc2
+
+* Update openjdk to 1.8.0_51 ("8u51")
+  This version of openjdk 8 addresses some severe CVEs, which are enumerated here:
+  http://www.oracle.com/technetwork/topics/security/cpujul2015-2367936.html#AppendixJAVA
+
+
+v1.6.1 Jul 21, 2015
+====================
+
+* Fix issues with the 'including unsupported' manifest
+  - Fix incorrect md5 checksum for node version 0.12.7
+  - Remove merge conflict annotations
+
+v1.6.0 Jul 20, 2015
+====================
+
+* Include CF built binaries
+  (https://www.pivotaltracker.com/story/show/97136960)
+
+v1.5.2 Jul 13, 2015
+====================
+
+* Update 1.7.* jrubies to 1.7.21 in response to CVE-2015-4020
+  Add support for JRuby 9.0.0.0.rc2
+  Remove support for JRuby 9.0.0.0.rc1
+  (https://www.pivotaltracker.com/story/show/98856174)
+
+* Add support for node version 0.12.7
+  (https://www.pivotaltracker.com/story/show/98855140)
+
+v1.5.1 Jul 10, 2015
+====================
+
+* Update error message in the event of deploying this buildpack on
+  an unsupported stack
+  (https://www.pivotaltracker.com/story/show/98579464)
+
+* Security upgrade to NodeJS 0.12.6
+  (https://www.pivotaltracker.com/story/show/98683546)
+
+* Updating to buildpack-packager v2.2.2
+  Now supports printing out buildpack dependencies via `buildpack-packager list`
+  (https://www.pivotaltracker.com/story/show/98588996)
+
+* Upgrade JRuby 9000 support to rc1
+  (https://www.pivotaltracker.com/story/show/97566746)
+
+v1.5.0 Jun 24, 2015
+====================
+
+* Remove lucid-specific binaries from manifest.yml
+  (https://www.pivotaltracker.com/story/show/96135874)
+
+* Give helpful message on unsupported stacks
+  (https://www.pivotaltracker.com/story/show/96590188)
+
+* Use cloudfoundry java team built OpenJdks
+  (https://www.pivotaltracker.com/story/show/94123750)
+
+v1.4.2 May 20, 2015
+====================
+
+* Merge upstream changes from Heroku up to SHA 4b493f80ed9ea9ae7bf8cd743068fb79e3c8b9a2
+	(https://www.pivotaltracker.com/story/show/94986118)
+
+* Add bundler version 1.9.7 to manifest
+	(https://www.pivotaltracker.com/story/show/94986118)
+
+v1.4.1 May 08, 2015
+====================
+
+* Default Ruby version set to MRI 2.2.2
+  (https://www.pivotaltracker.com/story/show/91706560)
+
+* Fixed Ruby 1.8.7 for unsupported manifest
+  (https://www.pivotaltracker.com/story/show/93717296)
+
+* Bump buildpack-packager to support custom buildpack manifests.
+  (https://www.pivotaltracker.com/story/show/93717296)
+
+v1.4.0 Apr 28, 2015
+====================
+
+* Remove many older ruby versions. We currenly support:
+	* MRI ruby versions:
+		* 2.2.2
+		* 2.2.1
+		* 2.1.6
+		* 2.1.5
+		* 2.0.0
+	* JRuby verisons:
+		* ruby-1.9.3-jruby-1.7.19
+		* ruby-2.0.0-jruby-1.7.19
+		* ruby-2.2.0-jruby-9.0.0.0.pre1
+
+  (https://www.pivotaltracker.com/story/show/93201508)
+  (https://www.pivotaltracker.com/story/show/90697240)
+  (https://www.pivotaltracker.com/story/show/90697238)
+
+* Update to latest OpenJDK 1.8
+  (https://www.pivotaltracker.com/story/show/90697236)
+
+* Updated to latest node JS
+  (https://www.pivotaltracker.com/story/show/90697226)
+
+v1.3.1 Apr 21, 2015
+====================
+
+* Update provided MRI ruby versions for CVE-2015-1855 (https://www.pivotaltracker.com/story/show/92437386)
+	* 2.0.0p645
+	* 2.1.6
+	* 2.2.2
+
+* Document Contribution guidelines (https://www.pivotaltracker.com/story/show/92459188)
+
+* Do not use cached dependencies when a running app is restaged on a different rootfs (https://www.pivotaltracker.com/story/show/91630536)
+
+* Merge upstream changes from Heroku up to SHA f349dfc1212ffb329ea73a41b15efac13ba302b8 (https://www.pivotaltracker.com/story/show/90537738)
+
+* Add support for jruby versions (https://www.pivotaltracker.com/story/show/90537738)
+	* jruby-1.7.19:
+		* ruby-1.8.7
+		* ruby-1.9.3
+		* ruby-2.0.0
+	* jruby-9.0.0.0:
+		* ruby-2.2.0
+
+v1.3.0 Mar 17, 2015
+====================
+
+* Support cflinuxfs2 stack. This does not include support for 1.8.7 and 1.9.2
+  (https://www.pivotaltracker.com/story/show/88174340)
+  (https://www.pivotaltracker.com/story/show/90295946)
+
+* Dropped support for Ruby 1.9.2 on lucid64
+  (https://www.pivotaltracker.com/story/show/90295946)
+
+* Reference git repos by https in cf.Gemfile
+  (https://www.pivotaltracker.com/story/show/90365848)
+
+* Add checksum to `manifest.yml` for all binaries.
+  (https://www.pivotaltracker.com/story/show/89503122)
+
+v1.2.1 Jan 27, 2015
+====================
+
+* Add Ruby 2.2.0
+  (https://www.pivotaltracker.com/story/show/86046576)
+
+* Update documentation for use of buildpack-packager
+  (https://www.pivotaltracker.com/story/show/85807806)
+
+* Merge upstream changes
+  (https://www.pivotaltracker.com/story/show/86046576)
+  * Update Bundler to 1.7
+    (https://github.com/heroku/heroku-buildpack-ruby/commit/4d6c831e9ba1c67604c395d20ba153a2752b303b)
+  * Fix support for JRuby 9.0.0.0.pre1
+    (https://github.com/heroku/heroku-buildpack-ruby/commit/881d794a8f33d102561798f696c049f5178ce60d)
+  * set JAVA_TOOL_OPTIONS for compile time JRuby
+    (https://github.com/heroku/heroku-buildpack-ruby/commit/380c9aa8626d689b6d0f0bdeaf5b78c999cf7540)
+
+v1.2.0 Dec 15, 2014
+====================
+
+* Introduce new offline dependency packaging system
+  (https://www.pivotaltracker.com/story/show/82513994)
+  (https://www.pivotaltracker.com/story/show/83886038)
+	(https://www.pivotaltracker.com/story/show/82972454)
+
+* Introduce new runtime dependency translation system
+  (https://www.pivotaltracker.com/story/show/82513994)
+  (https://www.pivotaltracker.com/story/show/83483872)
+  (https://www.pivotaltracker.com/story/show/83504664)
+
+v1.1.4 Nov 19, 2014
+====================
+
+* Add ruby 2.1.4 and 2.1.5
+
+* Update machete instructions in README
+  (https://www.pivotaltracker.com/story/show/82692644)
+
+* Test regression around copying the same file to itself
+  (https://www.pivotaltracker.com/story/show/81613240)
+
+* Add a regression test for stack env variable
+  (https://www.pivotaltracker.com/story/show/82289072)
+
+* Merge upstream changes
+  (https://www.pivotaltracker.com/story/show/82765888)
+  * Include fix to unbounded cache size
+    (https://github.com/heroku/heroku-buildpack-ruby/pull/314)
+  * Show full stack trace on all unexpected errors
+    (https://github.com/heroku/heroku-buildpack-ruby/commit/b84422c9c74f64aef37bd52966d0165858bf59a1)
+  * Suppress backtrace from likely errors
+    (https://github.com/heroku/heroku-buildpack-ruby/commit/74cba7c15c64386d85c46035030d46e2a6265b63)
+
+v1.1.3 Oct 21, 2014
+====================
+
+* Adds code to resolve fault where Ruby 2.1.3 apps to fail to stage.
+  (https://www.pivotaltracker.com/story/show/80934254)
+
+* Adds friendlier error message when apps request unavailable rubies in offline buildpacks.
+  (https://www.pivotaltracker.com/story/show/80403676)
+
+* Makes supporting Bash scripts more robust.
+  (https://www.pivotaltracker.com/story/show/79735118)
+
+v1.1.2 Oct 07, 2014
+====================
+
+* Add Ruby 2.1.2 and 2.1.3 to offline
+  (https://www.pivotaltracker.com/story/show/79742234)
+
+* Introduce fix for errors arising from unset STACK variable.
+  (https://www.pivotaltracker.com/story/show/78677868)
+  (https://www.pivotaltracker.com/story/show/80029582)
+  (https://www.pivotaltracker.com/story/show/78290072)
+
+* Print version number of buildpack while compiling
+  (https://www.pivotaltracker.com/story/show/78505368)
+
+* Merge from upstream
+
+v1.1.1 Sep 22, 2014
+====================
+
+* Update buildpack-packager
+  (https://www.pivotaltracker.com/story/show/79126294)
+
+* Merge Heroku upstream changes up to [v127](https://github.com/heroku/heroku-buildpack-ruby/releases/tag/v127). Important changes:
+  * Improve RBX support
+
+v1.1.0 Aug 29, 2014
+====================
+
+* Fixed libreadline issue.
+  (https://www.pivotaltracker.com/story/show/75199948)
+
+* Removes spurious warning "already initialized constant" warning
+  (https://www.pivotaltracker.com/story/show/76163642)
+
+* Merges Heroku upstream changes up to [v126](https://github.com/heroku/heroku-buildpack-ruby/releases/tag/v126). Important changes:
+  * NodeJS is now a dependency
+  * Bundler updated to 1.6.3
+
+v1.0.1 Jul 22, 2014
+====================
+
+* Improve documentation and make the README CF specific.
+  (https://www.pivotaltracker.com/story/show/69192654)
+  (https://www.pivotaltracker.com/story/show/73157440)
+
+* Switch to new Cloud Foundry offline dependency framework
+  (https://www.pivotaltracker.com/story/show/73384384)
+  (https://www.pivotaltracker.com/story/show/73544396)
+
+  (https://www.pivotaltracker.com/story/show/74053110)
+  (https://www.pivotaltracker.com/story/show/73723814)
+
+* Allow apps to specify BUNDLE_GEMFILE environment variable
+  (https://www.pivotaltracker.com/story/show/73334472)
+
+* Added vendor/cache to .gitignore
+
+* Use Ruby 2.1.1 for packaging
+
+* Improve version imprinting
+  (https://www.pivotaltracker.com/story/show/73158908)
+
+* Fix: Offline mode should not attempt to use public networks
+  (https://www.pivotaltracker.com/story/show/73420832)
+
+* Fix: Install 12 factor plugins when the user does not provided it
+
+* Fix: do not ignore bin/ dir in rails 4 apps.
+
+v1.0.0 Jun 17, 2014
+===================
+
+* Remove libyaml 0.1.5. It's not used and has a security flaw.
+
+* Modify [the Heroku Ruby buildpack](https://github.com/heroku/heroku-buildpack-ruby) to
+  support offline mode.
+
+* Do not download Heroku's pre-cached gems. They are not binary compatible
+  with the Cloud Foundry environment.

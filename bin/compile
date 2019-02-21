@@ -1,0 +1,55 @@
+#!/bin/bash
+set -euo pipefail
+
+# BUILD_DIR=/tmp/app
+BUILD_DIR=$1
+CACHE_DIR=$2
+export BUILDPACK_DIR=`dirname $(readlink -f ${BASH_SOURCE%/*})`
+export DEPS_DIR="$BUILD_DIR/.cloudfoundry"
+source $BUILDPACK_DIR/bin/staging_common.sh
+
+topic "BUILD_DIR:$BUILD_DIR"
+topic "CACHE_DIR:$CACHE_DIR"
+
+topic "start Staging"
+
+## pre installed fakechroot pcakge for home/vcap/app .
+cd $BUILD_DIR
+
+topic "installing pre-compiled JDK7 && JEUS 6"
+mkdir -p $BUILD_DIR/tmp && cd $BUILD_DIR/tmp
+tar xf $BUILDPACK_DIR/prebuilt-archives/home_vcap_app_image/home_vcap_app_image.tar.gz  > /dev/null 2>&1 
+# JEUS_HOME /home/vcap/app/jeus6, so moving home.
+mv -f $BUILD_DIR/tmp/jdk7  $BUILD_DIR/
+mv -f $BUILD_DIR/tmp/jeus6  $BUILD_DIR/
+cd $BUILD_DIR && rm -rf  $BUILD_DIR/tmp
+
+
+if [[ -f $BUILD_DIR/.profile ]]; then
+  echo "using cf pushed .profile"	
+else
+  echo "using /home/vcap/app/.profile from buildpack"
+  cp $BUILDPACK_DIR/prebuilt-archives/.profile  $BUILD_DIR/.profile
+fi
+
+
+## 'ubuntu' is hostname of jeus server
+if [[ -d $BUILD_DIR/jeus/config/ ]]; then
+  echo "using cf pushed ./jeus/config/* instead of configuration from buildpack."
+  cp -rf $BUILD_DIR/jeus/config $BUILD_DIR/jeus6/
+  rm -rf $BUILD_DIR/jeus
+else
+  cp -rf $BUILDPACK_DIR/prebuilt-archives/jeus-config/jeus6/config  $BUILD_DIR/jeus6/
+fi
+
+
+if [[ -f $BUILD_DIR/start-jeus.sh ]]; then
+  echo "using cf pushed start-jeus.sh to start jeus"	
+else
+  echo "using start-jeus.sh from buildpack"
+  cp -rf $BUILDPACK_DIR/prebuilt-archives/jeus-config/start-jeus.sh  $BUILD_DIR/start-jeus.sh
+fi
+chmod +x $BUILD_DIR/start-jeus.sh
+
+
+topic "Staging completed"

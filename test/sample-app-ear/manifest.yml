@@ -1,0 +1,11 @@
+---
+applications:
+- name: sample
+  buildpack: jeus-buildpack
+  command: /home/vcap/app/start-jeus.sh
+  port: 8080
+  memory: 2GB
+  disk_quota: 1GB
+  health-check-type: process
+
+#command: echo "BBBB" && source /home/ && nc -l -p 8080
